@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>回到顶部小火箭</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="full-screen" content="yes">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html, body {
+			position: relative;
+			height: 200%;
+			background: #f89231;
+		}
+		.btn-back {
+			position: fixed;
+			z-index: 4;
+			bottom: 4rem;
+			right: 1rem;
+			width: 2rem;
+			height: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<p>《金刚2》(King Kong Lives)是由约翰·吉尔勒明执导，Peter Elliott，George Antoni，布莱恩·科尔文等人主演的一部科幻电影。影片讲述了沉睡的金刚再度复活，并与母金刚突破人类重重设防回到原生地的故事。</p>
+	<img class="btn-back" src="/image/btn-to-top.png" alt="">
+	<script src="/js/backToTop.js"></script>
+	<script>
+		document.querySelector(".btn-back").addEventListener("touchend", backToTop, false);
+	</script>
+</body>
+</html>
